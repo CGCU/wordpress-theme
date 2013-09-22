@@ -808,6 +808,8 @@ HEADER STYLES
     position: relative;
     top: -25px;
     left: 0px; }
+  #logo img {
+    width: 100px; }
 
 /*********************
 NAVIGATION STYLES
@@ -854,6 +856,10 @@ and more scalable.
   .nav li.current_page_item a,
   .nav li.current-page-ancestor a {
     color: #f03016; }
+    .nav li.current-menu-item a:hover,
+    .nav li.current_page_item a:hover,
+    .nav li.current-page-ancestor a:hover {
+      color: #cb240d; }
 
 /* end .nav */
 /*********************
@@ -1228,6 +1234,131 @@ you can add resource intensive styles.
   Site Name:
   Author:
   
+  Stylesheet: Tablet & Small Desktop Stylesheet
+  
+  Here's where you can start getting into the good stuff.
+  This size will work on iPads, other tablets, and desktops.
+  So you can start working with more styles, background images,
+  and other resources. You'll also notice the grid starts to
+  come into play. Have fun!
+  
+  ******************************************************************/
+  /*********************
+  GENERAL STYLES
+  *********************/
+  /*********************
+  LAYOUT & GRID STYLES
+  *********************/
+  .wrap {
+    max-width: 1140px; }
+
+  .header {
+    float: left;
+    width: 25%;
+    margin-right: 2%; }
+
+  #content {
+    float: left;
+    width: 73%; }
+
+  /*********************
+  HEADER STYLES
+  *********************/
+  #logo {
+    padding-left: 10px;
+    display: block; }
+    #logo img {
+      width: 90%;
+      max-width: 400px;
+      display: block; }
+    #logo a {
+      margin-top: 35px;
+      display: block; }
+
+  /*********************
+  NAVIGATION STYLES
+  *********************/
+  .nav {
+    background: none;
+    border: 0;
+    padding-left: 14px;
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+    .nav li {
+      position: relative;
+      /*
+      plan your menus and drop-downs wisely.
+      */
+      /* showing sub-menus */ }
+      .nav li a {
+        font-size: 17px;
+        border-bottom: 0;
+        padding: 5px 0;
+        /*
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
+        .nav li a:hover, .nav li a:focus {
+          background: none; }
+      .nav li ul.sub-menu,
+      .nav li ul.children {
+        margin-top: 0;
+        border: 1px solid #ccc;
+        border-top: 0;
+        position: absolute;
+        display: none;
+        z-index: 8999;
+        /* highlight sub-menu current page */ }
+        .nav li ul.sub-menu li,
+        .nav li ul.children li {
+          /*
+          if you need to go deeper, go nuts
+          just remember deeper menus suck
+          for usability. k, bai.
+          */ }
+          .nav li ul.sub-menu li a,
+          .nav li ul.children li a {
+            padding-left: 10px;
+            border-right: 0;
+            display: block;
+            width: 180px;
+            border-bottom: 1px solid #ccc; }
+          .nav li ul.sub-menu li:last-child a,
+          .nav li ul.children li:last-child a {
+            border-bottom: 0; }
+      .nav li:hover ul {
+        top: auto;
+        display: block; }
+
+  /* end .nav */
+  /*********************
+  FOOTER STYLES
+  *********************/
+  /*
+  you'll probably need to do quite a bit
+  of overriding here if you styled them for
+  mobile. Make sure to double check these!
+  */
+  .footer-links ul li {
+    /*
+    be careful with the depth of your menus.
+    it's very rare to have multi-depth menus in
+    the footer.
+    */ }
+
+  /* end .footer-links */ }
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+  /******************************************************************
+  Site Name:
+  Author:
+  
   Stylesheet: Grid Stylesheet
   
   I've seperated the grid so you can swap it out easily. It's
@@ -1306,85 +1437,29 @@ you can add resource intensive styles.
     float: right; }
 
   /******************************************************************
-  Site Name:
-  Author:
+  Site Name: 
+  Author: 
   
-  Stylesheet: Tablet & Small Desktop Stylesheet
+  Stylesheet: Desktop Stylsheet
   
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
+  This is the desktop size. It's larger than an iPad so it will only
+  be seen on the Desktop. 
   
   ******************************************************************/
-  /*********************
-  GENERAL STYLES
-  *********************/
   /*********************
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
     max-width: 1140px; }
 
-  /*********************
-  HEADER STYLES
-  *********************/
-  /*********************
-  NAVIGATION STYLES
-  *********************/
-  .nav {
-    background: #eee;
-    border: 0;
-    /* end .menu ul li */
-    /* highlight current page */
-    /* end current highlighters */ }
-    .nav li {
-      float: left;
-      position: relative;
-      /*
-      plan your menus and drop-downs wisely.
-      */
-      /* showing sub-menus */ }
-      .nav li a {
-        border-bottom: 0;
-        /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
-        .nav li a:hover, .nav li a:focus {
-          background-color: #dedede; }
-      .nav li ul.sub-menu,
-      .nav li ul.children {
-        margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
-        position: absolute;
-        display: none;
-        z-index: 8999;
-        /* highlight sub-menu current page */ }
-        .nav li ul.sub-menu li,
-        .nav li ul.children li {
-          /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
-          .nav li ul.sub-menu li a,
-          .nav li ul.children li a {
-            padding-left: 10px;
-            border-right: 0;
-            display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
-      .nav li:hover ul {
-        top: auto;
-        display: block; }
+  .header {
+    float: left;
+    width: 256px; }
 
-  /* end .nav */
+  #content {
+    float: left;
+    width: 73%; }
+
   /*********************
   SIDEBARS & ASIDES
   *********************/
@@ -1415,40 +1490,7 @@ you can add resource intensive styles.
   /* category widget */
   /* recent-comments widget */
   /* search widget */
-  /* text widget */
-  /*********************
-  FOOTER STYLES
-  *********************/
-  /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
-  .footer-links ul li {
-    /*
-    be careful with the depth of your menus.
-    it's very rare to have multi-depth menus in
-    the footer.
-    */ }
-
-  /* end .footer-links */ }
-/*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 1030px) {
-  /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Desktop Stylsheet
-  
-  This is the desktop size. It's larger than an iPad so it will only
-  be seen on the Desktop. 
-  
-  ******************************************************************/ }
+  /* text widget */ }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

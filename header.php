@@ -48,7 +48,7 @@
 				<div id="inner-header" class="wrap clearfix">
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<p id="logo" class="h1">
-						<img width="100px" src="<?php echo get_template_directory_uri(); ?>/library/images/cgcu.png">
+						<img src="<?php echo get_template_directory_uri(); ?>/library/images/cgcu.png">
 						<a href="<?php echo home_url(); ?>" rel="nofollow">
 							<?php bloginfo('name'); ?>
 						</a>

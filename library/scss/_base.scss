@@ -163,6 +163,9 @@ HEADER STYLES
 			top: -25px;
 			left: 0px;
 		}
+		img {
+			width: 100px;
+		}
 	}
 
 /*********************
@@ -246,6 +249,9 @@ and more scalable.
 	li.current-page-ancestor {
 		a {
 			color: $link-color;
+			&:hover {
+				color: $link-hover;
+			}
 		}
 
 	}  /* end current highlighters */
