@@ -16,7 +16,9 @@ GENERAL STYLES
 *********************/
 
 body {
-	font-family: $serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Trade Gothic W01 Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 200;
+	//font-family: $serif;
 	font-size: 100%;
 	line-height: 1.5;
 	color: #565656;
@@ -107,7 +109,6 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $sans-serif;
 	text-rendering: optimizelegibility;
-	font-weight: 500;
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -152,7 +153,17 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+		margin: 10px 0 ;
+		position: relative;
+		a {
+			color: #333;
+			font-weight: thin;
+			position: relative;
+			top: -25px;
+			left: 0px;
+		}
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -169,6 +180,9 @@ and more scalable.
 .nav {
 	border: 1px solid #ccc;
 	border-bottom: 0;
+	ul {
+		margin: 0;
+	}
 
 	li {
 
@@ -176,8 +190,8 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
 			border-bottom: 1px solid #ccc;
+			color: #888;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -230,8 +244,9 @@ and more scalable.
 	li.current-menu-item,
 	li.current_page_item,
 	li.current-page-ancestor {
-
-		a {}
+		a {
+			color: $link-color;
+		}
 
 	}  /* end current highlighters */
 
@@ -243,7 +258,7 @@ POSTS & CONTENT STYLES
 *********************/
 
 #content {
-	margin-top: 2.2em;
+	margin-top: 0em;
 }
 
 		.hentry {
@@ -276,7 +291,6 @@ POSTS & CONTENT STYLES
 		/* post meta */
 		.byline {
 			color: #999;
-
 			time {}
 		}
 
@@ -285,7 +299,8 @@ POSTS & CONTENT STYLES
 
 			p {}
 
-
+			padding-bottom: 30px;
+			border-bottom: 1px solid #eee;
 			ul, ol, table, dl {}
 
 			ul, ol {
