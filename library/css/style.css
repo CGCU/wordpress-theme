@@ -788,7 +788,7 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1.1em;
-  font-weight: 700; }
+  font-weight: 300; }
 
 h5, .h5 {
   font-size: 0.846em;
@@ -1467,18 +1467,26 @@ you can add resource intensive styles.
     margin-top: 2.2em; }
 
   .widgettitle {
-    border-bottom: 2px solid #444;
-    margin-bottom: 0.75em; }
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    border-bottom: thin solid #eee; }
 
   .widget {
     padding: 0 10px;
-    margin: 2.2em 0; }
-    .widget ul li {
-      margin-bottom: 0.75em;
-      /* deep nesting */ }
-      .widget ul li ul {
-        margin-top: 0.75em;
-        padding-left: 1em; }
+    margin: 0 0 2em; }
+    .widget ul {
+      margin: 0; }
+      .widget ul li {
+        margin-bottom: 0.25em;
+        /* deep nesting */ }
+        .widget ul li a {
+          text-decoration: none;
+          color: #999; }
+          .widget ul li a:hover {
+            color: #cb240d; }
+        .widget ul li ul {
+          margin-top: 0.75em;
+          padding-left: 1em; }
 
   /* links widget */
   /* meta widget */

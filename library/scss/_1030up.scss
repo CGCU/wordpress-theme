@@ -35,21 +35,29 @@ SIDEBARS & ASIDES
 }
 
     .widgettitle {
-        border-bottom: 2px solid #444;
-        margin-bottom: 0.75em;
+        margin-bottom: 0em;
+        padding-bottom: 0em;
+        border-bottom: thin solid #eee;
     }
 
     .widget {
         padding: 0 10px;
-        margin: 2.2em 0;
+        margin: 0 0 2em;
 
         ul {
+            margin: 0;
             li {
-                margin-bottom: 0.75em;
+                margin-bottom: 0.25em;
 
                 &:first-child {}
                 &:last-child {}
-                a {}
+                a {
+                    text-decoration: none;
+                    color: #999;
+                    &:hover {
+                        color: $link-hover;
+                    }
+                }
                 /* deep nesting */
 
                 ul {
