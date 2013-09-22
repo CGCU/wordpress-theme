@@ -1292,20 +1292,18 @@ you can add resource intensive styles.
       */
       /* showing sub-menus */ }
       .nav li a {
+        background: #fff;
         font-size: 17px;
-        border-bottom: 0;
         padding: 5px 0;
+        border: thin solid #fff;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
-        .nav li a:hover, .nav li a:focus {
-          background: none; }
       .nav li ul.sub-menu,
       .nav li ul.children {
         margin-top: 0;
-        border: 1px solid #ccc;
-        border-top: 0;
+        border: thin solid #ddd;
         position: absolute;
         display: none;
         z-index: 8999;
@@ -1322,11 +1320,7 @@ you can add resource intensive styles.
             padding-left: 10px;
             border-right: 0;
             display: block;
-            width: 180px;
-            border-bottom: 1px solid #ccc; }
-          .nav li ul.sub-menu li:last-child a,
-          .nav li ul.children li:last-child a {
-            border-bottom: 0; }
+            width: 180px; }
       .nav li:hover ul {
         top: auto;
         display: block; }

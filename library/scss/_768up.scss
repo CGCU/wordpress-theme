@@ -72,15 +72,15 @@ NAVIGATION STYLES
 	li {
 		position: relative;
 		a {
+			background: #fff;
 			font-size: 17px;
-			border-bottom: 0;
 			padding: 5px 0;
+			border: thin solid #fff;
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
 			*/
 			&:hover, &:focus {
-				background: none;
 			}
 		}
 
@@ -93,8 +93,7 @@ NAVIGATION STYLES
 		ul.sub-menu,
 		ul.children {
 			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
+			border: thin solid #ddd;
 			position: absolute;
 			display: none;
 			z-index: 8999;
@@ -106,7 +105,6 @@ NAVIGATION STYLES
 					border-right: 0;
 					display: block;
 					width: 180px;
-					border-bottom: 1px solid #ccc;
 
 					&:hover,
 					&:focus {}
@@ -119,7 +117,6 @@ NAVIGATION STYLES
 				&:last-child {
 
 					a {
-						border-bottom: 0;
 					}
 				}
 
