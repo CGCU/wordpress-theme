@@ -6,7 +6,7 @@
 							<?php bones_footer_links(); ?>
 									</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
+					<div class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - Sponsored by BP <img src="http://www.cgcu.net/cgcu/wp-content/uploads/2013/11/BP_logo.jpeg" width="30"></div>
 
 				</div> <!-- end #inner-footer -->
 
